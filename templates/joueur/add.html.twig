@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block title %} AddJoueur{% endblock %}
+{% block body %}
+<div class="cadre">
+<center><h1> Ajouter un nouvaux Joueur:</h1></center>
+{{form_start(f, {'attr':{'novalidate':'novalidate'}})}}
+  <div class="row">
+   <div class="col">{{form_row(f.nom)}}</div>
+   <div class="col">{{form_row(f.email)}}</div>
+  </div>
+{{ form_rest(f) }}</div>
+
+{% endblock %}
